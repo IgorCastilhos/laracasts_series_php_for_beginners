@@ -5,10 +5,11 @@ use JetBrains\PhpStorm\NoReturn;
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 $routes = [
-    '/' => 'controllers/index.php',
-    '/contact' => 'controllers/contact.php',
-    '/about' => 'controllers/about.php',
-    '/mission' => 'controllers/mission.php'
+    '/' => 'Controller/index.php',
+    '/contact' => 'Controller/contact.php',
+    '/about' => 'Controller/about.php',
+    '/notes' => 'Controller/notes.php',
+    '/mission' => 'Controller/mission.php'
 ];
 
 function routeToController($uri, $routes): void
